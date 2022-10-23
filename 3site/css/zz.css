@@ -1,0 +1,340 @@
+#cartInfo {
+                background:url(000.png);
+                border-radius: 4px;
+                bottom: 60px;
+                font-size: 13px;
+                padding: 25px;
+                position: absolute;
+                right: 30px;
+                white-space: nowrap; 
+}
+.container {
+display: flex;
+  flex-direction: raw;
+  justify-content: space-around;
+    margin: auto; 
+}
+  .footer{
+	display: flex;
+	flex-direction: raw;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #960840;
+	width: 100%;
+	height: 15vh;
+	margin-top: 100px;
+}
+   #bukvi{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  background: url(555.jpg);
+  background-size: cover;
+    width: 100% auto;
+	height: 1000px;
+	margin-top: 1px;
+	position: static; 
+
+}
+.bukvi2{
+background: url(04.jpg);
+width: 20%;
+    text-align: left;
+   	margin-top: 20px;
+	height: 350px;
+	float:right;
+text-shadow: black 0 0 2px;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.bukvi3{
+background: url(16.jpg) ;
+
+   width: 20%;
+    text-align: left;
+    	margin-top: 20px;
+	height: 350px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.bukvi4{
+background: url(23d.jpg);
+width: 20%;
+    text-align: left;
+   	margin-top: 20px;
+	height: 350px;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.bukvi5{
+background: url(22.jpg);
+     width: 20%;
+    text-align: left;
+   	margin-top: 20px;
+	height: 350px;
+	background-color: black;
+    opacity: .9;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+@media screen and (max-width: 1310px){
+.container {
+display: flex;
+flex-direction: column;
+  margin: auto; 
+}
+
+.bukvi2{
+background: url(5.jpg) contain;
+background-size:cover;
+   width: 100%;
+    text-align: left;
+   	margin-top: 20px;
+	height: 350px;
+}
+
+.bukvi3{
+background: url(16.jpg) ;
+background-size:cover;
+   width: 100%;
+    text-align: left;
+    	margin-top: 20px;
+	height: 350px;
+}
+.bukvi4{
+background: url(23d.jpg);
+background-size:cover;
+ width: 100%;
+    text-align: left;
+   	margin-top: 20px;
+	height: 350px;
+}
+.bukvi5{
+background: url(22.jpg);
+background-size:cover;
+    width: 100%;
+    text-align: left;
+   	margin-top: 20px;
+	height: 350px;
+}
+}
+
+   body {
+   
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Caveat', cursive;
+	font-size: 18px;
+}
+
+header {
+
+	background-color: #D2B186;
+	border: 1px  #ffffff;
+	height: 149px;
+	width: 100%;
+	opacity: 0.75;
+}
+
+.nav {
+
+	line-height: 150px;
+	margin-left: 100px;
+}
+
+.nav ul {
+	list-style: none;
+	padding: 5px;
+	margin: 0px;
+}
+
+.nav a {
+	float: left;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.nav a:hover {
+	color: #696969	;
+}
+
+.nav a:active {
+	color: #696969	;
+}
+
+
+.auth a:hover {
+	color: #000000;
+	background-color: #000000;
+}
+
+.logo {
+   position: relative;
+    width: 310px;
+    height: 200px;
+    margin: 0 auto;
+	margin-top: -20px;
+	background-image: url(9.png)
+
+}
+.b-topbar{
+  width: 100%;
+  position: fixed; top: 0; left: 0;
+
+}
+.lasuniken {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  position: fixed;
+  height: 60px;
+  overflow: hidden;
+  z-index: 10;
+}
+/* Выподающая стенка*/
+#nasugaculad {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 150px;
+  margin-top: 141px;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+  background: linear-gradient(200deg, #D2B186 30%, #960840 70%);
+  
+  
+}
+.kingisakeading{
+  margin:0;
+  padding:0;
+  
+}
+.kingisakeading li{
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255,);
+}
+.kingisakeading li span{
+  display: block;
+  font-size: 14px;
+  color: #000000;
+}
+/* цвет текста*/
+.kingisakeading li a{
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #nasugaculad {
+  transform: translateX(0);
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+}
+.nackingasecu {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #000000;
+}
+.deryndsakols {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.gerasilopdsnev.geras-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.gerasilopdsnev.geras-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+
+.btn-block{
+	margin-top: 5%;
+	z-index: 2;
+float: right;
+}
+.btn-block a{
+	color: #FFFFFF;
+	min-width: 194px; 
+	padding: 16px 10px 18px; 
+	margin: 0 auto; 
+	text-align: center; 
+	background-color: #FF7733;
+}
+.btn-block a:hover{
+	color: white;
+	background-color: #8cf5f2;
+}
+a { 
+    text-decoration: none;
+   } 
+   input[type=checkbox]:checked ~ .sidebarIconToggle > .deryndsakols {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .gerasilopdsnev.geras-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .gerasilopdsnev.geras-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+.text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align:center;
+width: 25%;
+margin-top: -250px;
+background-color:#D2B186;
+border: 4px outset #960840;
+height:200px;
+font-size:	36px;
+text-shadow: black 0 0 2px;
+
+}
