@@ -1,0 +1,6 @@
+{
+    "name": "divvone/moy",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

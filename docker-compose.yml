@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  php:
+    build:
+      context: ./docker/php/
+      args:
+        PHP_VERSION: 8.1
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+  nginx:
+    build:
+      context: ./docker/nginx/
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "1000:80"
+    depends_on:
+      - php
+  db:
+    build:
+      context: ./docker/db/
+    ports:
+      - "3406:3306"
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+  adminer:
+    image: adminer
+    ports:
+      - 127.0.0.1:8081:8080
+
+volumes:
+  db:

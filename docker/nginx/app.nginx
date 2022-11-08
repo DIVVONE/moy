@@ -1,0 +1,20 @@
+server {
+    listen 80;
+    server_name _;
+    root /var/www/html;
+    index index.html index.php;
+
+    location / {
+        try_files $uri $uri/ /index.php$is_args$args;
+     }
+
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass php:9000;
+        fastcgi_index index.php;
+        include fastcgi.conf;
+    }
+
+    error_log  stderr warn;
+    access_log  /dev/stdout main;
+}
