@@ -61,7 +61,7 @@ include("BD/qq.php");
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -72,7 +72,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -89,7 +89,7 @@ echo $row['text'];
 <?php
 $query = ("SELECT * FROM test where Id=2");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -100,7 +100,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=2");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -117,7 +117,7 @@ echo $row['text'];
 <?php
 $query = ("SELECT * FROM test where Id=3");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -128,7 +128,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=3");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -151,7 +151,7 @@ echo $row['text'];
 <?php
 $query = ("SELECT * FROM test where Id=4");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -162,7 +162,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=4");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -179,7 +179,7 @@ echo $row['text'];
 <?php
 $query = ("SELECT * FROM test where Id=5");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -190,7 +190,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=5");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -207,7 +207,7 @@ echo $row['text'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -218,7 +218,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -240,7 +240,7 @@ echo $row['text'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -251,7 +251,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -268,7 +268,7 @@ echo $row['text'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -279,7 +279,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -296,7 +296,7 @@ echo $row['text'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
@@ -307,7 +307,7 @@ echo $row['data'];
 <?php
 $query = ("SELECT * FROM test where Id=1");
 
-$result = mysqli_query ($link,$query) or die ("catch!");
+$result = mysqli_query (getConnection(),$query) or die ("catch!");
  if(mysqli_num_rows($result)>0){
  $row = mysqli_fetch_array($result);
 }
